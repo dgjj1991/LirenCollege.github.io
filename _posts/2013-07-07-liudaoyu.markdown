@@ -5,6 +5,7 @@ subtitle:   "祝立人大学第三期暑期学校开学"
 date:       2013-07-07 12:00:00
 author:     "刘道玉"
 header-img: "img/home-bg.JPG"
+catalog: true
 tags:
     - 立大三期
 ---
