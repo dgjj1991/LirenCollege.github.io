@@ -119,7 +119,7 @@ textarea {
   color: inherit;
 }
 button {
-  overflow: visible;
+  overflow: hidden;
 }
 button,
 select {
@@ -175,7 +175,7 @@ legend {
   border: 0;
 }
 textarea {
-  overflow: auto;
+  overflow: hidden;
 }
 optgroup {
   font-weight: bold;
