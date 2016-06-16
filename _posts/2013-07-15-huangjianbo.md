@@ -4,7 +4,6 @@ title: "中国的民族与民族的中国"
 date: 2013-07-15
 author: "黄剑波"
 header-img: "img/page-bg.jpg"
-catalog: true
 tag:
   - 立大三期
   - 北京游学

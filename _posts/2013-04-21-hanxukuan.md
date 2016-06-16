@@ -5,7 +5,6 @@ subtitle:
 date: 2013-04-21
 author: "韩旭宽"
 header-img: "img/page-bg.jpg"
-catalog: true
 tags:
    - LAT 分享
 ---

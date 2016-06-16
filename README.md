@@ -9,14 +9,11 @@ subtitle:   "立人大学暑期学校开幕式致辞"
 date:       2011-07-01 12:00:00
 author:     "李英强"
 header-img: "img/page-bg.jpg"
-catalog: true
 tags:
     - 立大一期
     - 李英强
 ---
 ```
-
-注：当该文内有小标题时才添加 `catalog: true` 选项。
 
 ## 文章来源
 

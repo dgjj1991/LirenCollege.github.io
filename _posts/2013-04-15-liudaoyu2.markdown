@@ -5,7 +5,6 @@ subtitle:   "《大学在人间》序言一"
 date:       2013-04-15 12:00:00
 author:     "刘道玉"
 header-img: "img/home-bg.JPG"
-catalog: true
 tags:
     - 立大三期
 ---
