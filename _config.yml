@@ -6,7 +6,7 @@ email: rolling404@gmail.com
 description: "立大记忆"
 keyword: "立人大学 游学 民间教育"
 url: "https://lirencollege.github.io"              # your host, for absolute URL
-baseurl: "https://lirencollege.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
