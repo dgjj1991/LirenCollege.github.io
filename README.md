@@ -1,3 +1,7 @@
+## 亟需帮助
+
+文章数量众多，各篇目质量参差不齐，亟需编辑进行校对处理。如果您对此感兴趣，欢迎到 [讨论区](https://github.com/LirenCollege/LirenCollege.github.io/issues)" 进行讨论参与。也可以直接发送邮件到<a href="mailto:rolling404@gmail.com"> rolling404@gmail.com </a>进行交流。
+
 ## 使用说明
 
 fork 本库，然后提交文章到 `_posts` 文件夹，以日期开头进行命名。文章标题等信息以如下格式开始，具体可参见 [_posts文件夹](https://github.com/LirenCollege/LirenCollege.github.io/tree/master/_posts) 里的范文。
