@@ -1,6 +1,6 @@
 ## 亟需帮助
 
-文章数量众多，各篇目质量参差不齐，亟需编辑进行校对处理。如果您对此感兴趣，欢迎到 [讨论区](https://github.com/LirenCollege/LirenCollege.github.io/issues)" 进行讨论参与。也可以直接发送邮件到<a href="mailto:rolling404@gmail.com"> rolling404@gmail.com </a>进行交流。
+文章数量众多，各篇目质量参差不齐，亟需编辑进行校对处理。如果您对此感兴趣，欢迎到 [讨论区](https://github.com/LirenCollege/LirenCollege.github.io/issues) 进行讨论参与。也可以直接发送邮件到<a href="mailto:rolling404@gmail.com"> rolling404@gmail.com </a>进行交流。
 
 ## 使用说明
 
