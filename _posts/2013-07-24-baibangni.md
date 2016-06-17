@@ -1,5 +1,5 @@
 ---
-l答yout: post
+layout: post
 title: "聊写作，聊生活"
 author: "柏邦妮"
 date: 2013-07-24
