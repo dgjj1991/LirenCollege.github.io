@@ -3,7 +3,7 @@ layout: post
 title: "在民间寻找事业和生命的价值"
 date: 2013-07-19
 author: "梁晓燕"
-header-img: "img/page-bg.jpg"
+header-img: "img/pag4-bg.jpg"
 tag:
   - 立大三期
   - 北京游学
