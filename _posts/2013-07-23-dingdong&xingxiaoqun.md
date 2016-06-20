@@ -3,7 +3,7 @@ layout: post
 title: "口述历史与民间学术"
 date: 2013-07-23
 author: "丁东&刑小群"
-header-img: "img/page-bg.jpg"
+header-img: "img/page17-bg.jpg"
 tag:
   - 立大三期
   - 北京游学
