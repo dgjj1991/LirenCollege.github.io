@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "中国的民族与民族的中国"
+subtitle:
 date: 2013-07-15
 author: "黄剑波"
 header-img: "img/page9-bg.jpg"
