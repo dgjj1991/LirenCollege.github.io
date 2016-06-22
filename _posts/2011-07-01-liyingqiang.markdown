@@ -60,4 +60,4 @@ tags:
 
 @湖北蕲春青石中学
 
-![李英强](http://o8ukxcl11.bkt.clouddn.com/2011-07-01-li.JPG)
+![李英强](http://o8ukxcl11.bkt.clouddn.com/2011-07-01-li-min.JPG)
