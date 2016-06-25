@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "国家正当性问题"
+subtitle:
 date: 2013-07-19 19:00:00
 author: "邓伟生"
 header-img: "img/page-bg.jpg"
