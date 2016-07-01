@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "聊写作，聊生活"
+subtitle:
 author: "柏邦妮"
 date: 2013-07-24
 header-img: "img/page-bg.jpg"

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "从当下的反宪政思潮说起"
+subtitle:
 date: 2013-07-24
 author: "王建勋"
 header-img: "img/page-bg.jpg"
