@@ -5,7 +5,7 @@ header-img: img/home-bg.JPG
 email: rolling404@gmail.com
 description: "由立人大学学员自发维护的博客，发布立人大学的历年资料，如授课文字稿，学员文章和相关报道等。"
 keyword: "立人大学,游学,民间教育,博客"
-url: "https://lrcollege.info"              # your host, for absolute URL
+url: "https://lirencollege.github.io"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
