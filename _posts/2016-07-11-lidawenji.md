@@ -1,16 +1,13 @@
 ---
-layout: post
-title: "立大文集"
-subtitle: "《大學 在人間》续集整理中"
-date: 2016-07-11 20:30:00
-author: "立人"
-header-img: "img/page-bg.jpg"
+layout:     post
+title:      "立大文集"
+subtitle:   "《大學 在人間》续集整理中"
+date:       2016-07-11 22:10:00
+author:     
+header-img: "img/home-bg.JPG"
 tags:
- - 立大文集
- - 立大事务
+    - 立大文集
 ---
-
-朋友们：
 
 「立人大学」将满 5 岁。最近，几位小伙伴把从虎口中保留下来的 200 多本《大學 在人間》陆陆续续赠送出去，谢谢参与过、支持过、关注过立大的各位朋友。由于数量有限，如果你没有拿到制作精美的纸质版《大學 在人間》，可以从[这里](https://github.com/LirenCollege/LRC/releases)获取电子版方便阅读。
 
