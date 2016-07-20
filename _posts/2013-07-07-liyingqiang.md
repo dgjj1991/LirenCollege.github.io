@@ -1,13 +1,12 @@
 ---
-layout: post
-title: "2013年立人大学开幕致辞"
-subtitle:
-author: "李英强"
-date: 2013-07-07 14:00:00
-header-img:"img/home-bg.JPG"
+layout:     post
+title:      "2013年立人大学开幕致辞"
+subtitle:   
+date:       2013-07-07 14:00:00
+author:     "李英强"
+header-img: "img/home-bg.JPG"
 tags:
- - 立大三期
- - 开幕致辞
+    - 立大三期
 ---
 
 先帮我向刘校长致敬，老人家一口气讲了40分钟，好辛苦。听得很感动，我觉得压力好大，没有过度，就接着刘老师来讲。我习惯不打草稿讲话，后果就是我现在的语无伦次。我先略将一点。
