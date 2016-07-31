@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "反思激进主义与追寻自由主义"
 subtitle: "近二十年来中国思想的两个侧面"
 date: 2011-07-06

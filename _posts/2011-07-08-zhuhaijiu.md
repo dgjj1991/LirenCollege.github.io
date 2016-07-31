@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "法律与道德"
 subtitle:
 date: 2011-07-08
