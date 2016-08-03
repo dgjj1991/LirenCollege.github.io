@@ -9,6 +9,9 @@
     padding-right: 5%;
   }
 }
+.post-container {
+  text-align: justify;
+}
 .sidebar-container {
   color: #bfbfbf;
   font-size: 14px;
