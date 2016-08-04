@@ -180,7 +180,6 @@ article {
 }
 blockquote {
   color: #808080;
-  font-style: italic;
   font-size: 0.95em;
   margin: 20px 0 20px;
 }
@@ -630,7 +629,6 @@ pre code {
   font-family: 'Lora', 'Times New Roman', serif;
   color: #808080;
   font-size: 16px;
-  font-style: italic;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
@@ -657,7 +655,6 @@ pre code {
 }
 .post-content-preview {
   font-size: 13px;
-  font-style: italic;
   color: #a3a3a3;
 }
 .post-content-preview:hover {
