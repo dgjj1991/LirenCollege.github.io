@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="由立人大学学员自发维护的博客，发布立人大学的历年资料，如授课文字稿，学员文章和相关报道等。">
+    <meta name="keywords"  content="立人大学,游学,民间教育,博客">
+    <link rel="shortcut icon" href="/img/logo.png">
+
+    <title>大学在人间</title>
+
+    <link rel="canonical" href="http://localhost:4000/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">大学在人间</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/archives/">Archives</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/feed.xml">RSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from
+     * $toggle/$collapse will break global delegation.
+     *
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/home-bg.JPG')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>大学在人间</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">立大记忆</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+        
+
+<!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			
+<div class="post-preview">
+    <a href="/2016/08/29/jianyi/">
+        <h2 class="post-title">
+            【教育自救】给不甘堕落的大学生的七个建议
+        </h2>
+        
+        <div class="post-content-preview">
+            英强按：前天将一篇鼓励年轻人通过读书、交友来「突破大学围墙，实现自我成长」的旧文翻出来发了，感觉只是说到了一个方面，想起来三年前还写过另外一篇比较完整的《转型时代，青年何为》，也还不过时。或许对已经身在大学之中，感到迷茫迷惘的青年人，会有一点参考价值。有的时候，人们会有一种误会，以为学会抱怨是一种觉悟和能力——你看，那些浑浑噩噩的人满足于在猪槽边争食，我好歹开始对猪圈不满了！抱怨不会带来什么...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 李英强 on August 29, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/08/27/jiaoyuzijiu/">
+        <h2 class="post-title">
+            【教育自救】不要把青春和你的大学一起烂掉
+        </h2>
+        
+        <div class="post-content-preview">
+            英强按：这是大约3年前写的一篇文章，原题为《五种读书会：把你在上的大学改造成「自修大学」》。目下已是开学季，万千年轻的灵魂，进入了各处「聚天下英才而毁之」的「党校分部」，想着那号称象牙塔的所在，却是沤烂青春的洗脑工厂，想着许多带着理想的热情和憧憬的年轻人却在那里默默的被削圆、磨平、抛光……令人痛心。利维坦不死，还将继续吞吃千千万万的青年。人力何其卑微，能做的事情何其有限。但愿这篇旧文，其中有...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 李英强 on August 27, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/07/15/lidawenji/">
+        <h2 class="post-title">
+            立大文集事务
+        </h2>
+        
+        <div class="post-content-preview">
+            「立人大学」将满 5 岁。最近，几位小伙伴把从虎口中保留下来的 200 多本《大學 在人間》陆陆续续赠送出去，谢谢参与过、支持过、关注过立大的各位朋友。立大赠书已结束，截止到 7 月 15 日有 160 余位朋友登记领取文集，由于数量有限，没有拿到纸质版《大學 在人間》的朋友可以从这里获取电子版。
+
+半年前至今，我们一直在搜集整理 2012~2014 年的文字资料，延用《大學 在人間》名字，...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 立人 on July 15, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/07/02/zengshu/">
+        <h2 class="post-title">
+            赠送《大學 在人間》
+        </h2>
+        
+        <div class="post-content-preview">
+            2011 年 7 月 1 日，第一届立人大学在青石中学 开幕，李英强先生提出了「一起办大学」的理念。转眼已整整五年，从 2011 年到 2014 年，立大举办了四次暑期活动和一次寒假活动，加上文学院、研修班和学思分享会，有不少朋友直接或者间接参与了立人大学。在 2014 年的关停大潮中，立人大学未能幸免，原立大工作团队成员的人身自由和人生安全都无法保障，要么被非法拘禁，要么被迫逃散雪藏，人人...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by  on July 2, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2014/07/25/tony_yet/">
+        <h2 class="post-title">
+            从问对问题开始
+        </h2>
+        
+        <div class="post-content-preview">
+            
+  主讲人：Tony Yet
+
+
+
+  时间：2014.8.12 晚上
+
+
+
+  整理人：易勇佺 沈晓帆
+
+
+
+  相关链接：Tony Yet 博客，Pinboard 书签
+
+
+问题引入
+
+Tony：大家为什么会来到这里？
+
+学员：百度地图。
+
+Tony：具体？
+
+学员：顺着地图走路过来。
+
+Tony：如何称呼？
+
+学员：大熊，Big bear.
+
+学员：问路。
+
+Tony：如何问？
+
+学...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Tony Yet on July 25, 2014
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2014/07/22/dengweisheng/">
+        <h2 class="post-title">
+            Rawls 的正義理論
+        </h2>
+        
+        <div class="post-content-preview">
+            
+  讲师：邓伟生
+
+
+一、分配的正義與社會的基本結構
+
+分配的正義問題：
+
+社會成員應該根據什麼原則來分配他們所享有的權利、自由、物質方面的報酬，以及他們應有些什麼義務。也就是說，哪一種分配原則才是對的或合乎道德的。
+
+羅爾斯的正義論的主要對象是社會的基本結構(the basic structure of society)：「所謂的社會基本結構，乃指各種主要的社會組織之間如何互相協調而構成...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 鄧偉生 on July 22, 2014
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2014/07/20/ninger/">
+        <h2 class="post-title">
+            温柔的愤怒
+        </h2>
+        
+        <h3 class="post-subtitle">
+            过去十年中国的民谣唱作人
+        </h3>
+        
+        <div class="post-content-preview">
+            
+讲者：宁二
+
+「如果西方摇滚乐是洪水，中国的摇滚乐就像一把刀子。我们的刀子要狠狠刺向你」。——过去三十年中国最具影响力的独立音乐人崔健曾经这样说。直到今天，崔健还一直在强调「刀子」所代表的音乐的批判性。虽然他仍然是广受年轻音乐人尊敬的前辈，但后来者们却未必同意他的看法了。
+宋雨哲，一位生于 1970 年的后朋克乐队的主唱，在 2003 年解散了他颇具影响力的乐队。他说在乐队时，是「热血上涌...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 宁二 on July 20, 2014
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2014/07/19/ligongming/">
+        <h2 class="post-title">
+            艺术欣赏
+        </h2>
+        
+        <div class="post-content-preview">
+            
+  讲师：李公明
+
+
+大家上午好，非常高兴有这样一个机会和同学们一块来讨论这个艺术。其实谈起艺术我就想起来小时候从小的怎么样去爱好艺术，慢慢走上艺术研究的道路。说起来我是挺羡慕大家的，因为在求学的时候有这么好的一个机会参加这样的一个主题的学习。
+
+我今天讲的这个艺术欣赏，在大学里面应该是一种通识的教育，就是素质教育中应该有的。可能有的同学也都学过关于美术史的知识，那么我就大概的既介绍一些基...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 李公明 on July 19, 2014
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2013/07/30/yangzao/">
+        <h2 class="post-title">
+            人文教育的必要性
+        </h2>
+        
+        <div class="post-content-preview">
+            
+  讲师：杨早
+
+  时间：2013 年 7 月 30 日 上午
+
+  地点：新 706 青年空间
+
+  整理：钟欣越&amp;彭圣傲
+
+
+理工科在大学里面受到前所未有的重视，不知道你们知不知道有句话，从 60 年代开始有，到 70 年代末流行于全中国，叫作「学好数理化，走遍天下都不怕」。后来把它变了，叫作「学好数理化，不如有个好爸爸」。现在是一个拼爹的时代。包括毛泽东那个时候也说过这句话...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 杨早 on July 30, 2013
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2013/07/29/daizhiyong/">
+        <h2 class="post-title">
+            向外与向内
+        </h2>
+        
+        <h3 class="post-subtitle">
+            评论可以抵达何处
+        </h3>
+        
+        <div class="post-content-preview">
+            
+  讲者：戴志勇
+
+  整理：郑思源、余雅芬、陈玫
+
+
+主持人：同学们，今天是我们立人大学最后一场演讲，我们有幸请来了南方周末的评论员戴志勇老师，一会戴志勇老师会分享他的学思经历，我在这里就不赘言了，下面有请戴志勇老师，大家掌声欢迎。
+
+戴志勇：大家好，我是第一次以这样的方式来分享自己的经验，当然我很开心能跟这么多年轻的同学一块交流。上次鄢烈山老师过来对《南方周末》有些批评，我想他是《南方...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 戴志勇 on July 29, 2013
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    
+    <li class="next">
+        <a href="/page2">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+    		</div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                            
+                                <a href="/tags/#立大一期" title="立大一期" rel="10">
+                                    立大一期
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#LAT 分享" title="LAT 分享" rel="5">
+                                    LAT 分享
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#立大三期" title="立大三期" rel="27">
+                                    立大三期
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#北京游学" title="北京游学" rel="16">
+                                    北京游学
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#广州游学" title="广州游学" rel="12">
+                                    广州游学
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#立大四期" title="立大四期" rel="4">
+                                    立大四期
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                            <img src="/img/logo.png" />
+                        
+                        
+                            <p>课堂、记忆与思考</p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            <li>
+                                <a href="/feed.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/LirenCollege">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </section>
+                <!-- Friends Blog -->
+                
+    		</div>
+        
+	</div>
+</div>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/LirenCollege">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 大学在人间 2017 | Theme by <a href="http://huangxuan.me">Hux</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

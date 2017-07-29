@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="由立人大学学员自发维护的博客，发布立人大学的历年资料，如授课文字稿，学员文章和相关报道等。">
+    <meta name="keywords"  content="立人大学,游学,民间教育,博客">
+    <link rel="shortcut icon" href="/img/logo.png">
+
+    <title>如何理解社会？ - 大学在人间</title>
+
+    <link rel="canonical" href="http://localhost:4000/2011/07/06/anzhu/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">大学在人间</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/archives/">Archives</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/feed.xml">RSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from
+     * $toggle/$collapse will break global delegation.
+     *
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/page-bg.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/page-bg.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#立大一期" title="立大一期">立大一期</a>
+                        
+                    </div>
+                    <h1>如何理解社会？</h1>
+                    
+                    
+                    <h2 class="subheading"></h2>
+                    
+                    <span class="meta">Posted by 安猪 on July 6, 2011</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<blockquote>
+  <p>时间：2011年7月6日上午
+地点：湖北蕲春青石中学多媒体教室
+讲者：安猪老师</p>
+</blockquote>
+
+<p>为什么会有这样一个主题？公益的议题中，除了奉献之外，对社会的理解是非常重要的。</p>
+
+<p>在开始之前，不知道大家对我有多少了解，估计熟悉我的人不太多。那么我简单介绍一下自己。我本名余志海，我非常喜欢旅行，是一个背包客。喜欢读书，是美妙的事情。老家是安平，求学生涯是在广州度过的。96年从华南理工大学毕业，毕业之后在电信和IT行业工作，在公司的社会里面工作了10年，01年来到北京，2000年到北京被迷住了。还是在电信和IT行业，04年因为一些机缘凑巧，创办了多背一公斤。06年痛下决心辞职做全职公益人。也有一个团队。这是我一个大致的经历。我的公益经验也不是很丰富。从开始做志愿者到现在也只是七八年的时间。</p>
+
+<p>一直做两件事，多背一公斤，不断思考不但反思，是不是真的有效，对社会有价值，不断有一些思考的结果。</p>
+
+<p>希望和大家一起做一个作业，来到立人大学，每个同学都是有一定的社会理想的，用三分钟的时间，大家用笔和纸写下你对两个问题的回答：我想改变的社会问题是什么？我希望怎么做？</p>
+
+<ul>
+  <li>我想改变的是社会不平等，用法律为少数去维权；</li>
+  <li>我想改变的是社会上人们对艺术的看法，推广音乐美术相关的内容；</li>
+  <li>人人自由不平等，我希望做一名公民记者；</li>
+  <li>城镇乡村的中小学教育问题。去做一名教师；</li>
+  <li>对临终病人错误的医治方式和最后的相处方式。引入安宁医院的体系；</li>
+  <li>乡村教育的现状，推广全民教育。通过发展壮大这个组织。</li>
+</ul>
+
+<p>回到主题，我们要去改变社会的时候，我们要做什么？首先要理解社会问题，它是怎么产生的，怎么影响每个人。我不是学术专家，不会讲学术问题。会从游戏开始我们的讨论。</p>
+
+<p>我大学时代是 286 电脑，掷骰子，类似麻将，一开始会有四到六个玩家，每个玩家手里都会有一笔钱，大家就开始在棋盘上掷骰子，有很多机会，可能好可能坏。有什么好处呢？收过路费。最终谁能用最好的方法取得胜利，我要把别人都搞破产。从另一个角度去看这个游戏，游戏与我们的社会很像，阴谋手段。最终也会产生少数的赢家和大量的输家。这就是游戏折射出来的社会现状。</p>
+
+<p>我想问大家的问题是：如果游戏代表的是一种现实，你如何去改变玩家的状况，一个成了大富翁，剩下的都破产了。面对这样的情况，你会怎么做？</p>
+
+<p>刚才有同学说想要改变不平等，有人赢，有人输。</p>
+
+<p><strong>学员：</strong> 在公平的游戏规则下竞争的结果。</p>
+
+<p><strong>学员：</strong> 赤裸裸的利益。一个房地产商要拆迁，是平等吗？</p>
+
+<p><strong>学员：</strong> 这其中可以加入第三方，保证游戏公正公平公开地进行。</p>
+
+<p>现在回到游戏。平时看到弱势群体，看到小孩不能读书，看到为富不仁，对于将要破产的玩家给他一笔钱，让他玩下去，当玩家的钱太多了，就扣除一部分，再分给其他玩家。这是一种常见的做法。这是真正有效的吗？</p>
+
+<p>如果游戏规则不变的话，总会产生少数的赢家，大多数的输家，社会现实中，弱势群体和强势群体并不是故意存在的。游戏规则的好坏决定了游戏是否公正公平。如果是坏的游戏规则，受害的是所有的人。这是一个好的规则吗？能让我们更加有尊严地生活。这是社会学的一个基本原则。不应当仅仅盯在人群上，要看游戏规则是如何运行的。让每个人都不由自主地成为好人。</p>
+
+<p>如果你参加游戏，也遵守规则，你会是一个怎样的人？唯一的目标就是成为大赢家。</p>
+
+<p><strong>学员：</strong> 我的想法是把别人打败，彻底打败。大奸似忠。</p>
+
+<p><strong>学员：</strong> 肯定是破产的那个人，不会不择手段达到自己的目的。</p>
+
+<p><strong>学员：</strong> 我会想办法成为那个搅局的人。</p>
+
+<p>老师偏心有两种情况。我想一名可以引导学生的老师，没有让学生的精神丰富起来，才会让各种思想趁虚而入。归因于老师的素质，作为社会整体的观念，在这样的游戏规则中，我们每个人都可能成为坏人。可以作更深的思考。</p>
+
+<p>每一个大的问题下面都可以分解成更多的小问题。今天的讨论不是为了得到唯一的答案，而是要看到更多的可能性。</p>
+
+<p>接下来做一个轻松的讨论，该不该实施国家层面的计划生育政策？我们把国家层面的计划生育看做是控制人口的一个方式，主要理由是，中国近三十年的发展是人口红利，老年人已经超过百分之八，进入老龄化社会，青少年的赡养负担比较重，还有国防的兵源，独生子女对家庭的顾虑。</p>
+
+<p>老龄化问题不能作为对政策的影响，只是了解了部分的计划生育政策，国家层面的计划生育政策已经在进行调整。做出平衡的话，广东人不实行计划生育，但他们那里有一个问题，即使我本来可以上更好的学校，资源分配不公，生越多越穷，越穷越生。得不到不好的教育。</p>
+
+<p>应当解除。生育政策≠国家层面的计划生育政策。计划生育具有一种强制性。不一定只能生一胎。剥夺当母亲的权利，不能强制性的。这个政策是否起到了控制人口的作用？我们对自己的生活都有自己的判断。</p>
+
+<p>我发现一点，习惯站在国家的层面上看这个问题，计划生育影响的人？要生孩子的夫妇，或是已经有一个孩子的夫妇。要了解这些人。在这样的政策里面，隐含了什么样的假设，假设就是觉得我作为年轻的父母，我没有权利决定自己能要几个孩子。每一个政策背后都有这些假设，也许会把这样的人群物化，把他们看做一群没有差别的实体，作为政府工作报告的一个结果出现。中国人多，饿死也无所谓，这是最可悲的。另外一方面，我们要葆有一定的关怀。</p>
+
+<p>下一个问题：学校的作用？《地球上的星星》，《三个傻瓜》，《死亡诗社》。趁这个机会思考一下，学校是什么？</p>
+
+<p><strong>学员：</strong> 学校的作用？教育的承诺就是知识改变命运。我的理解是，我来自贫穷的家庭，知识让我意识到我身边的穷人很多。学校改变了我的命运，出路在哪里，引导学生去思考这个问题，给予学生一种好奇心去思考超越生存的问题。培养思考能力。</p>
+
+<p><strong>学员：</strong> 昨天听到有同学对我说，这里的初中生早上五点到晚上九点，难道吃饱饭比国家更重要吗？那些输家为争取挤入上层社会的机会，很多农村学生为改变艰苦环境，唯有高考。我父亲的大哥二哥，二哥依然在家里种田，过着很苦的生活。两极分化的情况，一些摆脱了贫困的人中产阶级二代，探索自己人生的目标，教育的环境僵化的。为什么要对你进行洗脑。要维护统治利益。与防火墙原理差不多。</p>
+
+<p><strong>学员：</strong> 图书馆。人际关系的培养。学校是一个团体，当一个人价值观还没有形成的时候，可以在相对纯净的环境中培养自己的人际关系。对高中来说，好学校在技能上有很好的环境，现在的中国上大学还是一个必要的选择。教育体制一直在强调平等，也会造成不好的东西，我们在培养建设社会主义的螺丝钉，我们也必须要知道，虽然找不到特别差的问题，也使我们损失了特别优秀的人才。</p>
+
+<p><strong>学员：</strong> 人们可以自发地组织起来，比如教会，在一起交流履行，学校的存在并不一定是必要的。</p>
+
+<p>西方的学校什么时候产生的？它的作用是什么？到现在作用模式有没有什么变化？工业革命的时候产生的，父母不能在家看自己的孩子，孩子需要一个地方组织起来，更重要在于为工业革命培养更多的工人，很多学校的体系是按照工厂的需要组织起来，是分系的，批量化的课程，上课下课都是设置好的。是工厂的再现。学校的作用是什么？学校希望我们通过这样的学习。</p>
+
+<p>——理解社会的运作。相关的利益方在同一个游戏中互动。</p>
+
+<p>学校是怎么运作的？除了人以外，会有很多因素支持学校的运作。学习有文化，譬如读大学有前途，这种文化会影响我们的价值观。如果你违背了制度会受到惩罚，甚至会被记过被退学。同样的，在学校中有各种各样的身份，不同级别的行政官员，形成一种结构，在小学中学非常明显，小队长、中队长、大队长，现在有市的总队长五道杠。通过这样的形式去实现它存在的目的。我思考社会问题的时候从这样的思路去思考。这个社会的各方怎样互相影响。文化、制度、身份、结构……</p>
+
+<p>死亡诗社，并不是我们想象中的美好，那是因为你服从这样的规则，试图违背的话，会付出血的代价。这样一个制度希望强调一点，这个制度一直在迫害我们，好像我们是无能为力的，但真正的情况并不是这样的。制度为什么能正常顺利地运行？为什么我们能接受自己的身份？</p>
+
+<p><strong>学员：</strong> 从出生起我们就是学校的原料，初中是初加工，运输到社会，推销到各个世界。</p>
+
+<p>学校运转依赖于外在的文化等等，更根本地依赖于我们的认同与合作，也许我们不满意，但我们忍受了，合作的背后是共同的信仰，不管是学校还是工厂才能得以正常的运转。我们每个人都希望能过上更好的生活，更公平更有创造力，而且这个社会远远没到完美的程度，每个小社会都有很大的改善的空间。</p>
+
+<p>合作与共同信仰。</p>
+
+<p>更像是官僚体制的最底层。朗读者，我学到一个词，叫做平庸的恶。这里面的女主人公叫汉娜，但她执行了屠杀的命令，烧人的时候去锁了门。她是怎么去支持了社会的运行呢？能够仅仅因为这些免罪吗？支持了最大的恶的产生。</p>
+
+<p><strong>学员：</strong> 其他的战犯把所有的事情都推到了汉娜身上。</p>
+
+<p>我的理解不是同谋推卸责任，而是就算没有同谋的迫害，她也有自己的罪。不能否认，她也是恶的执行者。通过我们的合作去支持这个社会的运行，很大程度上我们都是同谋者，至少是旁观者，意识到这一点，也给我们了机会，前提是我们要意识到，只是尽责地执行命令，如何去意识到我们的合作，我们内心的共同信仰是怎么样支持了这个社会的运作？</p>
+
+<p>——谁创造了描述？谁控制了信息？谁从中得益？</p>
+
+<p>只要有人受害，就必定有人受益。思考背后的渊源时，不妨问这三个问题。</p>
+
+<p>只有社会主义才能救中国，农村的学生很可怜，这样的描述会导致什么不公平的事情发生。广东佬吃出了非典。
+让人服从有两种方法，一种是暴力，另一种是控制信息。通俗说是洗脑。我们要有这样的意识，我们的信息是不完整的，要不断去评估。</p>
+
+<p>最终让哪些人获得了利益？哪些人受到了损害？</p>
+
+<p><strong>学员：</strong> 中国人太多了？大家会很简单地理解为中国人太多了。中国的大多数问题都是人多造成的，比如大学生就业很困难，这背后还有很多东西要挖掘，剥夺了自己进一步思考的权利。</p>
+
+<p>安猪：背后的真实意思是某些中国人太多了。并没有包含自己。</p>
+
+<p><strong>学员：</strong> 中国内陆乞丐有多少？是什么造成的？是被迫为别人赚钱吗？经常在街道上看到很多乞丐，会想到底有多少？我在城里上高中的时候，市区人比较多的地方，早上天快亮的时候，晚上就会出来，有些是身体残疾，有些人为了赚钱把儿童老人抓去致残，然后挣钱。</p>
+
+<p><strong>学员：</strong> 立邦漆会导致中国男人性功能底下。其实跟中国的民族主义的意淫刚好一致，特别是把过去与中国有过节的国家的公司。肯德基与转基因有关。纪录片中有很多新左派的观点，跨国公司的新垄断。</p>
+
+<p><strong>学员：</strong> 中国人不值得为你牺牲。当时的学生运动领袖说的，柴玲是一个很假的人，这么多中国人都没有支援我，我所做的一切都是为了你们。道德制高点来威胁别人。</p>
+
+<p><strong>学员：</strong> 国内很多人对柴琳的意见是来自于这部电影。他被这部电影妖魔化。</p>
+
+<p><strong>学员：</strong> 单亲家庭的孩子更容易心理畸形。给他们了一种身份认同，我跟你们就是不一样。这也是导致性格扭曲的一个因素。</p>
+
+<p><strong>学员：</strong> 药家鑫说的农村人很难缠。城市的发展很大一部分是靠农村来支持的，农村出于二等公民。</p>
+
+<p><strong>学员：</strong> 中国人是需要管的。把所有的东西都交给政府，是对个人意识觉醒的一个压制。</p>
+
+<p><strong>学员：</strong> 在毕业之后，从事慈善运动实在是太伟大了。选择公益生活，这只是一种选择，跟伟大无关。</p>
+
+<p>——我们的社会是复杂的，利益相关方会互动，我们需要思考每一方在其中的位置、身份、作用。社会如何对我们施加影响。我们如何去反思和觉察这一切。</p>
+
+
+                <hr>
+
+                <div id="container"></div>
+              	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+              	<script>
+              	var gitment = new Gitment({
+              	  id: '页面 ID', // 可选。默认为 location.href
+              	  owner: 'tsai1993',
+              	  repo: 'LirenCollege.github.io',
+              	  oauth: {
+              	    client_id: 'f79a9bce32cb0b813a2c',
+              	    client_secret: '0b7cc6a4a27443c7059192598697c428161588b5',
+              	  },
+              	})
+              	gitment.render('container')
+              	</script>
+
+                
+
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2011/07/04/xuyouyu/" data-toggle="tooltip" data-placement="top" title="徐友渔：我的学思历程">
+                        Previous<br>
+                        <span>徐友渔：我的学思历程</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2011/07/06/linjiangang/" data-toggle="tooltip" data-placement="top" title="反思激进主义与追寻自由主义">
+                        Next<br>
+                        <span>反思激进主义与追寻自由主义</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+
+                
+
+                
+
+            </div>
+
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags/#立大一期" title="立大一期" rel="10">
+                                    立大一期
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#LAT 分享" title="LAT 分享" rel="5">
+                                    LAT 分享
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#立大三期" title="立大三期" rel="27">
+                                    立大三期
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#北京游学" title="北京游学" rel="16">
+                                    北京游学
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#广州游学" title="广州游学" rel="12">
+                                    广州游学
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#立大四期" title="立大四期" rel="4">
+                                    立大四期
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/LirenCollege">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 大学在人间 2017 | Theme by <a href="http://huangxuan.me">Hux</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

@@ -62,6 +62,21 @@ layout: default
 
                 <hr>
 
+                <div id="container"></div>
+              	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+              	<script>
+              	var gitment = new Gitment({
+              	  id: '页面 ID', // 可选。默认为 location.href
+              	  owner: 'tsai1993',
+              	  repo: 'LirenCollege.github.io',
+              	  oauth: {
+              	    client_id: 'f79a9bce32cb0b813a2c',
+              	    client_secret: '0b7cc6a4a27443c7059192598697c428161588b5',
+              	  },
+              	})
+              	gitment.render('container')
+              	</script>
+
                 {% if site.duoshuo_share && site.duoshuo_username %}
                 <!-- 多说 Share start -->
                 </style>
@@ -128,7 +143,7 @@ layout: default
                 <!-- disqus 评论框 end -->
                 {% endif %}
 
-            </div>  
+            </div>
 
     <!-- Side Catalog Container -->
         {% if page.catalog %}
