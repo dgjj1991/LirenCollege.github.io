@@ -1,6 +1,19 @@
 <!-- Footer -->
 <footer>
     <div class="container">
+      <div id="gitalk-container"></div>
+      <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      <script type="text/javascript">
+      const gitalk = new Gitalk({
+        clientID:: 'f79a9bce32cb0b813a2c',
+        clientSecret: '0b7cc6a4a27443c7059192598697c428161588b5',
+        owner: 'tsai1993',
+        repo: 'LirenCollege.github.io',
+        admin: ['tsai1993'],
+      })
+      gitalk.render('gitalk-container')
+      </script>
+
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
